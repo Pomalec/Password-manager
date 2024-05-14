@@ -1,0 +1,118 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(225, 230, 230);
+  background-size: calc(30, 40, 40);
+}
+.container {
+  padding-top: 180px;
+  position: relative;
+  background-color: #0040ff; /* Set background color of container */
+}
+.heading {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 54px;
+  font-weight: bold;
+  color: #fff; /* Set text color to white */
+}
+.subheading {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  font-size: 34px;
+  color: #eee; /* Set text color to a lighter shade of white */
+}
+.bullet-points {
+  position: absolute;
+  font-size: 40px;
+  top: 240px;
+  left: 120px;
+  list-style-type: none;
+  padding-left: 15px;
+}
+.bullet-points li {
+  font-size: 1em;
+  list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23808"><path d="M21 12 3 19l4-7-4-7 18 7z"></path></svg>');
+}
+.bullet-points li ::marker {
+  font-size: 6px;
+}
+
+.form-container {
+  position: absolute;
+  size: 200px;
+  top: 50%;
+  right: 150px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Increase width and height */
+  width: 450px; /* Adjust width as needed */
+  height: 430px; /* Adjust height as needed */
+}
+
+.form-group {
+  position: center;
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 93%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0040ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0030cc;
+}
+
+/* Add this CSS for password visibility toggle icon */
+.password-input-container {
+  position: relative;
+}
+
+.password-input-container input[type="password"] {
+  padding-right: 40px; /* Space for the toggle icon */
+}
+
+.password {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust the position as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Hide password */
+.password.bx-show:after {
+  content: "\f441";
+}
+
+/* Show password */
+.password.bx-hide:after {
+  content: "\f42e";
+}
